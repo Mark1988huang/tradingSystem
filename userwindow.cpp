@@ -12,3 +12,8 @@ UserWindow::~UserWindow()
 {
     delete ui;
 }
+
+void UserWindow::on_pushButton_clicked()
+{
+//    this->~UserWindow();
+}

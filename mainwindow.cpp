@@ -17,9 +17,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_userButton_clicked()
 {
-    UserWindow *u= new UserWindow;
-    u->show();
-    this
+//    UserWindow *u= new UserWindow;
+//    u->show();
+    UserWindow u;
+    u.show();
 }
 
 void MainWindow::on_goodsButton_clicked()
