@@ -19,6 +19,7 @@ void MainWindow::on_userButton_clicked()
 {
     UserWindow *u= new UserWindow;
     u->show();
+    this
 }
 
 void MainWindow::on_goodsButton_clicked()
