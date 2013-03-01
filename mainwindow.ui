@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>688</width>
-    <height>456</height>
+    <height>469</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>688</width>
+    <height>469</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>688</width>
+    <height>469</height>
+   </size>
   </property>
   <property name="acceptDrops">
    <bool>false</bool>
@@ -55,16 +67,19 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>320</y>
+      <y>310</y>
       <width>403</width>
       <height>69</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="log">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
@@ -75,7 +90,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="userLine"/>
        </item>
        <item>
         <widget class="QLabel" name="label_2">
@@ -85,9 +100,12 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="passLine">
          <property name="inputMethodHints">
-          <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase</set>
+          <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
          </property>
         </widget>
        </item>
@@ -95,16 +113,6 @@
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QPushButton" name="quitButton">
-         <property name="text">
-          <string>Quit</string>
-         </property>
-         <property name="flat">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
        <item>
         <widget class="QPushButton" name="loginButton">
          <property name="text">
@@ -125,15 +133,22 @@
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="QPushButton" name="quitButton">
+         <property name="text">
+          <string>Quit</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
     </layout>
    </widget>
    <zorder>layoutWidget</zorder>
-   <zorder>loginButton</zorder>
    <zorder>goodsButton</zorder>
-   <zorder>quitButton</zorder>
-   <zorder>helpButton</zorder>
    <zorder>userButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">

@@ -13,7 +13,7 @@ UserWindow::~UserWindow()
     delete ui;
 }
 
-void UserWindow::on_pushButton_clicked()
+void UserWindow::on_returnButton_clicked()
 {
-//    this->~UserWindow();
+    this->~UserWindow();
 }

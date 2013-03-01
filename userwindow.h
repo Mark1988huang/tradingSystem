@@ -2,6 +2,7 @@
 #define USERWINDOW_H
 
 #include <QMainWindow>
+#include "mainwindow.h"
 
 namespace Ui {
 class UserWindow;
@@ -16,10 +17,11 @@ public:
     ~UserWindow();
     
 private slots:
-    void on_pushButton_clicked();
+    void on_returnButton_clicked();
 
 private:
     Ui::UserWindow *ui;
+    Ui::MainWindow *main;
 };
 
 #endif // USERWINDOW_H
